@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2E3740;
+    color: #435160;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 {
+    color: #6D7781;
+    font-family: "Sofia", cursive;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #435160;
+    text-decoration: none;
+}
+
+.regex {
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -175px;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+    width: 350px;
+    padding: 20px 0;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #435160;
+    outline: none;
+    color: #6D7781;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin-right: 10px;
+    margin-top: 14px;
+    background: transparent;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+
+input[type="submit"] {
+    background: #1FCE6D;
+    border: 0;
+    width: 350px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 20px;
+}
+input[type="submit"]:hover {
+    background: #16aa56;
+    animation-name: shake;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #2E3740 inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #6D7781 !important;
+}
+
+.refresh {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+.refresh:hover {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    color: #6D7781;
+}
+
+.validation {
+    margin-top: 20px;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #6D7781;
+}
+
+.valid {
+    color: seagreen;
+    display: inline-block;
+}
+
+.invalid {
+    color: brown;
+    display: inline-block;
+}
+
+::-webkit-datetime-edit-text {
+    padding: 0 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+::-webkit-datetime-edit-month-field {
+    font-family: "Open Sans", sans-serif;
+}
+::-webkit-datetime-edit-day-field {
+    font-family: "Open Sans", sans-serif;
+}
+::-webkit-datetime-edit-year-field {
+    font-family: "Open Sans", sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: #435160;
+    font-size: 12px;
+}
+
+.animated {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(10px);
+    }
+}
